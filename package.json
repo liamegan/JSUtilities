@@ -1,5 +1,5 @@
 {
-  "name": "le-utils",
+  "name": "@liamegan1/le-utils",
   "version": "0.0.1",
   "description": "Helpful utility classes for JS",
   "source": "src/index.ts",
