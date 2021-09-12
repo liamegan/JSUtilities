@@ -1,0 +1,43 @@
+{
+  "name": "le-utils",
+  "version": "0.0.1",
+  "description": "Helpful utility classes for JS",
+  "source": "src/index.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.module.js",
+  "umd:main": "dist/index.umd.js",
+  "unpkg": "dist/index.umd.js",
+  "exports": {
+    ".": "./dist/index.modern.js"
+  },
+  "scripts": {
+    "build": "rm -rf dist; npx microbundle",
+    "dev": "microbundle watch",
+    "prepare": "husky install; npm run build",
+    "document": "npx typedoc src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liamegan/JSUtilities.git"
+  },
+  "author": "Liam Egan <liam@wethecollective.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/liamegan/JSUtilities/issues"
+  },
+  "homepage": "https://github.com/liamegan/JSUtilities#readme",
+  "devDependencies": {
+    "husky": "^7.0.2",
+    "microbundle": "^0.13.3",
+    "prettier": "^2.4.0",
+    "typedoc": "^0.22.3",
+    "typescript": "^4.4.3"
+  },
+  "prettier": {
+    "trailingComma": "none",
+    "tabWidth": 2,
+    "semi": false,
+    "singleQuote": true,
+    "printWidth": 80
+  }
+}
