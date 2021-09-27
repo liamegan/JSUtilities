@@ -50,6 +50,11 @@ const loadAllImages = function (t) {
   return Promise.all(e);
 };
 
+const smoothstep = function(edge0, edge1, x) {
+  const t = clamp(0.0, 1.0, (x - edge0) / (edge1 - edge0))
+  return t * t * (3.0 - 2.0 * t)
+}
+
 export {
   floatRandomBetween,
   clamp,
@@ -60,4 +65,5 @@ export {
   xmur3,
   asyncImageLoad,
   loadAllImages,
-};
+  smoothstep
+}

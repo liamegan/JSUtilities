@@ -1,6 +1,6 @@
 {
   "name": "@liamegan1/le-utils",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Helpful utility classes for JS",
   "source": "src/index.ts",
   "main": "dist/index.js",
